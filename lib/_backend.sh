@@ -99,7 +99,7 @@ backend_node_dependencies() {
 
   sudo su - deploy <<EOF
   cd /home/deploy/${instancia_add}/backend
-  npm install
+  npm install --force
 EOF
 
   sleep 2
@@ -147,6 +147,7 @@ backend_update() {
   npm install @types/fs-extra
   rm -rf dist 
   npm run build
+  npx sequelize db:migrate
   npx sequelize db:migrate
   npx sequelize db:seed
   pm2 start ${empresa_atualizar}-backend
