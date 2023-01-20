@@ -6,6 +6,6 @@ sudo apt install -y git && git clone https://github.com/Andresilvia/autoinstalad
 
 ACESSANDO DIRETORIO DO INSTALADOR & INICIANDO INSTALAÇÕES ADICIONAIS (USAR ESTE COMANDO PARA SEGUNDA OU MAIS INSTALAÇÃO:
 ```bash
-cd ./whaticket_install_baileys && sudo ./install_instancia
+cd ./autoinstaladorsaas && sudo ./install_instancia
 ```
 
